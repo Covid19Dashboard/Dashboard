@@ -8,43 +8,168 @@
         <link rel="icon" href="https://www.plant.ca/wp-content/uploads/2020/03/nCoV-CenterDiseaseControl23312.png" type="image/png" sizes="16x16">
         <link href ="war.css" rel ="stylesheet">
         <script src="fire.js"></script>
+        <script src="04-29-2020.json"></script>
 
     </head>
     
     <body class="everything">
         
         <div class="banner animated tada">
+
             <div class=" big-text animated tada">Coronavirus</div>
             <div>Dashboard</div>
             </div>
         
             <div class="tab">
             <button class="tablinks" onclick="openCity(event, 'Map')">Map</button>
+            <button class="tablinks" onclick="openCity(event, 'Graphs')">Graphs</button>
             <button class="tablinks" onclick="openCity(event, 'Industrial Index')">Industrial Index</button>
             <button class="tablinks" onclick="openCity(event, 'Local Food Pantry')">Local Food Pantry</button>
             </div>
         
             <!-- Tab content -->
             <div id="Map" class="tabcontent">
-            <h3>London</h3>
-            <p>London is the capital city of England.</p>
+                <h1>COVID-19 Recovered (April 29, 2020)</h1>
+                <div id='map' style='width:100%; height:500'></div>
+            </div>
+
+            <div id="Graphs" class="tabcontent">
+                <canvas id ="data1"></canvas>
+                <input id="count1" class="in" placeholder="Country 1">
+                <input id="count2" class="in" placeholder="Country 2">
+                <input id="count3" class="in" placeholder="Country 3">
+                <button onclick="dat1()" class="submit">Click To submit</button>
             </div>
         
             <div id="Industrial Index" class="tabcontent">
-            <h3>Paris</h3>
-            <p>Paris is the capital of France.</p>
+                <h3>Paris</h3>
+                <p>Paris is the capital of France.</p>
             </div>
         
             <div id="Local Food Pantry" class="tabcontent">
-            <h3>Tokyo</h3>
-            <p>Tokyo is the capital of Japan.</p>
+                <h3>Tokyo</h3>
+                <p>Tokyo is the capital of Japan.</p>
             </div>
-        <h1>COVID-19 Recovered (April 29, 2020)</h1>
-        <div id='map' style='width:100%; height:500'></div>
+
+        </div>
 
     </body>
     
     <script>
+
+        function dat1() {
+
+            String.prototype.capitalize = function() {
+                return this.charAt(0).toUpperCase() + this.slice(1);
+            }
+
+            var sel1 = document.getElementById("count1").value
+            var cSel1 = sel1.capitalize()
+
+            var sel2 = document.getElementById("count2").value
+            var cSel2 = sel2.capitalize()
+
+            var sel3 = document.getElementById("count3").value
+            var cSel3 = sel3.capitalize()
+
+            var c = document.getElementById("data1")
+            var ctx = c.getContext("2d")
+
+            ctx.font = "10px Ariel";
+
+            ctx.fillStyle = "White"
+            ctx.fillRect(0, 0, 1375, 500)
+
+            bar3:for(k=0; k < data.length; k++) {
+                if(data[k].Province_State == sel3 || data[k].Country_Region == sel3) {
+                    ctx.fillStyle = "White"
+                    ctx.fillRect(0, 0, 1423, 500);
+                    ctx.fillStyle = "Red"
+                    ctx.fillRect(0, 90, data[k].Confirmed/10, 30);
+                    ctx.fillStyle = "Black"
+                    ctx.fillText(data[k].Confirmed, 0, 110, 30)
+                    break bar3;
+                }
+                else if(data[k].Province_State == cSel3 || data[k].Country_Region == cSel3) {
+                    ctx.fillStyle = "White"
+                    ctx.fillRect(0, 0, 1423, 500);
+                    ctx.fillStyle = "Red"
+                    ctx.fillRect(0, 90, data[k].Confirmed/10, 30);
+                    ctx.fillStyle = "Black"
+                    ctx.fillText(data[k].Confirmed, 0, 110, 30)
+                    break bar3;
+                }
+                else if(sel3 == "") {
+                    break bar3;
+                }
+                else {
+                    ctx.fillStyle = "Black";
+                    ctx.fillRect(0, 100, 1423, 500);
+                    ctx.fillStyle = "White";
+                    ctx.fillText("Country 3 Not Found", 0, 130, 500);
+                }
+            }
+
+            bar2:for(j=0; j < data.length; j++) {
+                if(data[j].Province_State == sel2 || data[j].Country_Region == sel2) {
+                    ctx.fillStyle = "White"
+                    ctx.fillRect(0, 40, 1423, 50);
+                    ctx.fillStyle = "Green"
+                    ctx.fillRect(0, 50, data[j].Confirmed/10, 30);
+                    ctx.fillStyle = "Black"
+                    ctx.fillText(data[j].Confirmed, 0, 60, 30)
+                    break bar2;
+                }
+                else if(data[j].Province_State == cSel2 || data[j].Country_Region == cSel2) {
+                    ctx.fillStyle = "White"
+                    ctx.fillRect(0, 40, 1423, 50);
+                    ctx.fillStyle = "Green"
+                    ctx.fillRect(0, 50, data[j].Confirmed/10, 30);
+                    ctx.fillStyle = "Black"
+                    ctx.fillText(data[j].Confirmed, 0, 60, 30)
+                    break bar2;
+                }
+                else if(sel2 == "") {
+                    break bar2;
+                }
+                else {
+                    ctx.fillStyle = "Black";
+                    ctx.fillRect(0, 40, 1423, 50);
+                    ctx.fillStyle = "White";
+                    ctx.fillText("Country 2 Not Found", 0, 70, 500);
+                }
+            }
+
+            bar1:for(i=0; i < data.length; i++) {
+                if(data[i].Province_State == sel1 || data[i].Country_Region == sel1) {
+                    ctx.fillStyle = "White"
+                    ctx.fillRect(0, 0, 1423, 45);
+                    ctx.fillStyle = "Blue"
+                    ctx.fillRect(0, 10, data[i].Confirmed/10, 30);
+                    ctx.fillStyle = "Black"
+                    ctx.fillText(data[i].Confirmed, 0, 30, 30)
+                    break bar1;
+                }
+                else if(data[i].Province_State == cSel1 || data[i].Country_Region == cSel1) {
+                    ctx.fillStyle = "White"
+                    ctx.fillRect(0, 0, 1423, 50);
+                    ctx.fillStyle = "Blue"
+                    ctx.fillRect(0, 10, data[i].Confirmed/10, 30);
+                    ctx.fillStyle = "Black"
+                    ctx.fillText(data[i].Confirmed, 0, 30, 30)
+                    break bar1;
+                }
+                else if(sel1 == "") {
+                    break bar1;
+                }
+                else {
+                    ctx.fillStyle = "Black";
+                    ctx.fillRect(0, 0, 1423, 40);
+                    ctx.fillStyle = "White";
+                    ctx.fillText("Country 1 Not Found", 0, 30, 500)
+                }
+            }
+        }
 
         // Set up the world map
         map = new L.Map('map');
@@ -100,8 +225,6 @@
         L.circle([-12.4634,130.8456],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:250}).addTo(map).bindPopup('Australia,2020-04-30 02:32:27 : 25')
         L.circle([35.7452,95.9956],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:180}).addTo(map).bindPopup('China,2020-04-30 02:32:27 : 18')
         L.circle([-27.4698,153.0251],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:9430}).addTo(map).bindPopup('Australia,2020-04-30 02:32:27 : 943')
-        L.circle([,],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:203270}).addTo(map).bindPopup('Canada,2020-04-30 02:32:27 : 20327')
-        L.circle([,],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:1207200}).addTo(map).bindPopup('US,2020-04-30 02:32:27 : 120720')
         L.circle([-21.1151,55.5364],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:3000}).addTo(map).bindPopup('France,2020-04-30 02:32:27 : 300')
         L.circle([17.9,-62.8333],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:60}).addTo(map).bindPopup('France,2020-04-30 02:32:27 : 6')
         L.circle([35.1917,108.8701],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:2530}).addTo(map).bindPopup('China,2020-04-30 02:32:27 : 253')
@@ -165,7 +288,6 @@
         L.circle([35.1264,33.4299],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:1480}).addTo(map).bindPopup('Cyprus,2020-04-30 02:32:27 : 148')
         L.circle([49.8175,15.472999999999999],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:31080}).addTo(map).bindPopup('Czechia,2020-04-30 02:32:27 : 3108')
         L.circle([56.2639,9.5018],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:63660}).addTo(map).bindPopup('Denmark,2020-04-30 02:32:27 : 6366')
-        L.circle([,],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:6450}).addTo(map).bindPopup('Diamond Princess,2020-04-30 02:32:27 : 645')
         L.circle([11.8251,42.5903],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:5990}).addTo(map).bindPopup('Djibouti,2020-04-30 02:32:27 : 599')
         L.circle([15.415,-61.371],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:130}).addTo(map).bindPopup('Dominica,2020-04-30 02:32:27 : 13')
         L.circle([18.7357,-70.1627],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:12280}).addTo(map).bindPopup('Dominican Republic,2020-04-30 02:32:27 : 1228')

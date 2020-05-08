@@ -71,3 +71,8 @@ body {
   from {opacity: 0;}
   to {opacity: 1;}
 }
+canvas {
+  width: 1375;
+  height: 500;
+  background-color: #ffffff;
+}
