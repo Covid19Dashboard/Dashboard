@@ -293,17 +293,14 @@ L.circle([-19.015438,29.154857],{color:'red',fillColor:'#f03',fillOpacity:0.5,ra
     </script>
 
 </html>
-
   
-  <!DOCTYPE html>
-<html lang="en">
+  <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <title>My Chart.js Chart</title>
 </head>
 <body>
   <div class="container">
@@ -321,212 +318,17 @@ L.circle([-19.015438,29.154857],{color:'red',fillColor:'#f03',fillOpacity:0.5,ra
     let massPopChart = new Chart(myChart, {
       type:'bar', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
       data:{
-          labels:['United States', 'Russia', 'United Kingdom', 'Spain', 'Italy', 'Brazil', 'Germany', 'Turkey', 'France', 'Brazil', 'Germany', 'Turkey', 'France','Iran', 'Mainland China', 'China', 'India','Canada', 'Peru', 'Belgium', 'Saudi Arabia','Netherlands', 'Mexico', 'Chile', 'Pakistan','Ecuador', 'Switzerland', 'Portugal', 'Sweden','Qatar', 'Belarus', 'Singapore', 'Ireland','United Arab Emirates', 'Bangladesh', 'Poland', 'Israel','Ukraine', 'Japan', 'Romania', 'Austria', 'Colombia', 'Philippines','South Africa', 'Dominican Republic', 'Kuwait', 'South Korea','Denmark', 'Egypt', 'Serbia', 'Panama','Czechia', 'Norway', 'Australia', 'Malaysia','Argentina', 'Morocco', 'Algeria', 'Finland','Bahrain', 'Kazakhstan', 'Moldova', 'Afghanistan', 'Ghana', 'Nigeria', 'Oman', 'Luxembourg', 'Armenia', 'Hungary', 'Iraq', 'Thailand', 'Bolivia', 'Cameroon', 'Greece', 'Azerbaijan', 'Uzbekistan','Guinea', 'Croatia', 'Bosnia and Herzegovina', 'Senegal', 'Honduras', 'Bulgaria', 'Côte dIvoire', 'Cuba', 'Iceland', 'Estonia', 'North Macedonia','Sudan', 'lithuania', 'Slovakia', 'Slovenia', 'Djibouti', 'Somalia', 'Guatemala','Democratic Republic of the Congo', 'New Zealand', 'Mayotte', 'Hong Kong','Kyrgyzstan', 'El Salvador', 'Tunsia', 'Lativa','Kosovo', 'Maldives', 'Cyprus', 'Sri Lanka','Albania', 'Lebanon', 'Gabon', 'Niger', 'Guinea-Bissau', 'Costa Rica', 'Burkina Faso', 'Andorra', 'Kenya','Paraguay', 'Mali', 'Uruguay', 'Georgia','San Marino', 'Jordan', 'Tanzania', 'Malta','Jamacia', 'Zambia', 'Taiwan', 'Equatorial Guinea','Venezuela', 'Sierra Leone', 'Palestine', 'Chad', 'Mauritius', 'Isle of Man', 'Benin', 'Montenegro', 'Jersey','Vietnam', 'Rwanda', 'Cape Verde', 'Ethiopia', 'Guernsey', 'Nepal', 'Haiti', 'Liberia','Togo', 'South Sudan', 'Madagascar', 'Foroe Islands','Martinique', 'Eswatini', 'Burma','São Tomé and Príncipe', 'Guadeloupe', 'Gibraltar', 'French Guiana','Central African Republic', 'Brunei', 'Uganda', 'Cambodia','Bermuda', 'Trinidad and Tobago', 'Guyana', 'Northern Cyprus','Mozambique', 'Aruba', 'Monaco', 'The Bahamas', 'Cayman Islands', 'Barbados', 'Liechtenstein', 'Sint Maarten', 'Yemen','Libya', 'Malawi', 'French Polynesia', 'Syria','Macao', 'Angola', 'Mongolia', 'Eritrea','Saint Martin', 'Zimbabwe', 'Nicaragua', 'Antigua and Barbuda','Botswana', 'Timor-Leste', 'The Gambia', 'Grenada', 'Laos', 'Belize', 'Fiji', 'New Caledonia', 'Saint Lucia','Saint Vincent and the Grenadines ', 'Dominica', 'Namibia', 'Curaçao', 'Burundi', 'Saint Kitts and Nevis', 'Falkland Islands (Islas Malvinas)', 'Vatican City','Åland Islands', 'Greenland', 'Montserrat', 'Seychelles','Bhutan', 'Suriname', 'Mauritania','Papua New Guinea', 'British Virgin Islands', 'Saint Barthélemy', 'Anguilla','Saint Pierre and Miquelon'   
-],
+          labels:['United States', 'Russia', 'United Kingdom', 'Spain', 'Italy', 'Brazil', 'Germany', 'Turkey', 'France', 'Brazil', 'Germany', 'Turkey', 'France','Iran', 'Mainland China', 'China', 'India','Canada', 'Peru', 'Belgium', 'Saudi Arabia','Netherlands', 'Mexico', 'Chile', 'Pakistan','Ecuador', 'Switzerland', 'Portugal', 'Sweden','Qatar', 'Belarus', 'Singapore', 'Ireland','United Arab Emirates', 'Bangladesh', 'Poland', 'Israel','Ukraine', 'Japan', 'Romania', 'Austria', 'Colombia', 'Philippines','South Africa', 'Dominican Republic', 'Kuwait', 'South Korea','Denmark', 'Egypt', 'Serbia', 'Panama','Czechia', 'Norway', 'Australia', 'Malaysia','Argentina', 'Morocco', 'Algeria', 'Finland','Bahrain', 'Kazakhstan', 'Moldova', 'Afghanistan', 'Ghana', 'Nigeria', 'Oman', 'Luxembourg', 'Armenia', 'Hungary', 'Iraq', 'Thailand', 'Bolivia', 'Cameroon', 'Greece', 'Azerbaijan', 'Uzbekistan','Guinea', 'Croatia', 'Bosnia and Herzegovina', 'Senegal', 'Honduras', 'Bulgaria', 'Côte dIvoire', 'Cuba', 'Iceland', 'Estonia', 'North Macedonia','Sudan', 'lithuania', 'Slovakia', 'Slovenia', 'Djibouti', 'Somalia', 'Guatemala','Democratic Republic of the Congo', 'New Zealand', 'Mayotte', 'Hong Kong','Kyrgyzstan', 'El Salvador', 'Tunsia', 'Lativa','Kosovo', 'Maldives', 'Cyprus', 'Sri Lanka','Albania', 'Lebanon', 'Gabon', 'Niger', 'Guinea-Bissau', 'Costa Rica', 'Burkina Faso', 'Andorra', 'Kenya','Paraguay', 'Mali', 'Uruguay', 'Georgia','San Marino', 'Jordan', 'Tanzania', 'Malta','Jamacia', 'Zambia', 'Taiwan', 'Equatorial Guinea','Venezuela', 'Sierra Leone', 'Palestine', 'Chad', 'Mauritius', 'Isle of Man', 'Benin', 'Montenegro', 'Jersey','Vietnam', 'Rwanda', 'Cape Verde', 'Ethiopia', 'Guernsey', 'Nepal', 'Haiti', 'Liberia','Togo', 'South Sudan', 'Madagascar', 'Foroe Islands','Martinique', 'Eswatini', 'Burma','São Tomé and Príncipe', 'Guadeloupe', 'Gibraltar', 'French Guiana','Central African Republic', 'Brunei', 'Uganda', 'Cambodia','Bermuda', 'Trinidad and Tobago', 'Guyana', 'Northern Cyprus','Mozambique', 'Aruba', 'Monaco', 'The Bahamas', 'Cayman Islands', 'Barbados', 'Liechtenstein', 'Sint Maarten', 'Yemen','Libya', 'Malawi', 'French Polynesia', 'Syria','Macao', 'Angola', 'Mongolia', 'Eritrea','Saint Martin', 'Zimbabwe', 'Nicaragua', 'Antigua and Barbuda','Botswana', 'Timor-Leste', 'The Gambia', 'Grenada', 'Laos', 'Belize', 'Fiji', 'New Caledonia', 'Saint Lucia','Saint Vincent and the Grenadines ', 'Dominica', 'Namibia', 'Curaçao', 'Burundi', 'Saint Kitts and Nevis', 'Falkland Islands (Islas Malvinas)', 'Vatican City','Åland Islands', 'Greenland', 'Montserrat', 'Seychelles','Bhutan', 'Suriname', 'Mauritania','Papua New Guinea', 'British Virgin Islands', 'Saint Barthélemy', 'Anguilla','Saint Pierre and Miquelon'],
         datasets:[{
-          label:'Population',
-          data:[1411488, 242271, 229705, 228691, 222104, 180737, 173824, 143114, 140734, 112725, 82926, 82919,
-              74281,
-              72196,
-              72059,  
-              53981,
-              44830,
-              43211,
-              38324,
-              34381,
-              34336,
-              30419,
-              30413,
-              28132,
-              27909,
-              26539,
-              25825,
-              25346,
-              23401,
-              20386,
-              17822,
-              17204,
-              16539,
-              16425,
-              16049,
-              16002,
-              15964,
-              15438,
-              12272,
-              11618,
-              11350,
-              11196,
-              11028,
-              10962,
-              10667,
-              10431,
-              10295,
-              8783,
-              8240,
-              8158,
-              6980,
-              6550,
-              6512,
-              6253,
-              6054,
-              5780,
-              5417,
-              5406,
-              5226,
-              5127,
-              4787,
-              4019,
-              3904,
-              3718,
-              3341,
-              3032,
-              3017,
-              2964,
-              2800,
-              2760,
-              2758,
-              2568,
-              2374,
-              2213,
-              2181,
-              2105,
-              2080,
-              2069,
-              1857,
-              1810,
-              1802,
-              1751,
-              1694,
-              1661,
-              1505,
-              1469,
-              1463,
-              1286,
-              1219,
-              1199,
-              1169,
-              1147,
-              1095,
-              1051,
-              1044,
-              1037,
-              1032,
-              951,
-              919,
-              904,
-              903,
-              893,
-              880,
-              878,
-              863,
-              854,
-              836,
-              804,
-              766,
-              760,
-              737,
-              737,
-              730,
-              711,
-              647,
-              638,
-              576,
-              509,
-              508,
-              507,
-              446,
-              440,
-              439,
-              423,
-              387,
-              375,
-              357,
-              332,
-              331,
-              327,
-              324,
-              295,
-              288,
-              286,
-              267,
-              263,
-              252,
-              219,
-              219,
-              212,
-              199,
-              194,
-              192,
-              187,
-              187,
-              184,
-              181,
-              165,
-              155,
-              148,
-              146,
-              143,
-              141,
-              126,
-              122,
-              121,
-              116,
-              113,
-              108,
-              104,
-              101,
-              96,
-              93,
-              85,
-              84,
-              82,
-              77,
-              65,
-              64,
-              63,
-              60,
-              47,
-              45,
-              45,
-              42,
-              39,
-              39,
-              37,
-              25,
-              25,
-              24,
-              24,
-              23,
-              21,
-              19,
-              18,
-              18,
-              18,
-              17,
-              16,
-              16,
-              16,
-              15,
-              15,
-              13,
-              12,
-              11,
-              11,
-              11, 11, 11, 10, 9, 8, 7, 6, 6, 3, 1,
-          ],
+          label:'Confirmed',
+          data:[1411488, 242271, 229705, 228691, 222104, 180737, 173824, 143114, 140734, 112725, 82926, 82919, 74281, 72196, 72059, 53981, 44830, 43211, 38324, 34381, 34336, 30419, 30413, 28132, 27909, 26539, 25825, 25346, 23401, 20386, 17822, 17204, 16539, 16425, 16049, 16002, 15964, 15438, 12272, 11618, 11350, 11196, 11028, 10962, 10667, 10431, 15438, 12272, 11618, 11350, 11196, 11028, 10962, 10667, 10431, 10295, 8783, 8240, 8158, 6980, 6550, 6512, 6253, 6054, 5780, 5417, 5406, 5226, 5127, 4787, 4019, 3904, 3718, 3341, 3032, 3017, 2964, 2800, 2760, 2758, 2568, 2374, 2213, 2181, 2105, 2080, 2069, 1857, 1810, 1802, 1751, 1694, 1661, 1505, 1469, 1463, 1286, 1219, 1199, 1169, 1147, 1095, 1051, 1044, 1037, 1032, 951, 919, 904, 903, 893, 880, 878, 863, 854, 836, 804, 766, 760, 737, 737, 730, 711, 647, 638, 576, 509, 508, 507, 446, 440, 439, 423, 387, 375, 357, 332, 331, 327, 324, 295, 288, 286, 267, 263, 252, 219, 219, 212, 199, 194, 192, 187, 187, 184, 181, 165, 155, 148, 146, 143, 141, 126, 122, 121, 116, 113, 108, 104, 101, 96, 93, 85, 84, 82, 77, 65, 64, 63, 60, 47, 45, 45, 42, 39, 39, 37, 25, 25, 24, 24, 23, 21, 19, 18, 18, 18, 17, 16, 16, 16, 15, 15, 13, 12, 11, 11, 11, 11, 11, 10, 9, 8, 7, 6, 6, 3, 1,],
+        
+        
             
           //backgroundColor:'green',
-          backgroundColor:[
-            'rgba(255, 99, 132, 0.6)',
-            'rgba(54, 162, 235, 0.6)',
-            'rgba(255, 206, 86, 0.6)',
-            'rgba(75, 192, 192, 0.6)',
-            'rgba(153, 102, 255, 0.6)',
-            'rgba(255, 159, 64, 0.6)',
-            'rgba(255, 99, 132, 0.6)'
-          ],
-          borderWidth:1,
-          borderColor:'#777',
+          backgroundColor:['rgba(255, 99, 132, 0.6)', 'rgba(54, 162, 235, 0.6)', 'rgba(255, 206, 86, 0.6)', 'rgba(75, 192, 192, 0.6)', 'rgba(153, 102, 255, 0.6)', 'rgba(255, 159, 64, 0.6)', 'rgba(255, 99, 132, 0.6)', 'rgba(54, 162, 235, 0.6)', 'rgba(255, 206, 86, 0.6)', 'rgba(75, 192, 192, 0.6)', 'rgba(153, 102, 255, 0.6)', 'rgba(255, 159, 64, 0.6)', 'rgba(255, 99, 132, 0.6)', 'rgba(54, 162, 235, 0.6)', 'rgba(255, 206, 86, 0.6)', 'rgba(75, 192, 192, 0.6)', 'rgba(153, 102, 255, 0.6)', 'rgba(255, 159, 64, 0.6)', 'rgba(255, 99, 132, 0.6)', 'rgba(54, 162, 235, 0.6)', 'rgba(255, 206, 86, 0.6)', 'rgba(75, 192, 192, 0.6)', 'rgba(153, 102, 255, 0.6)', 'rgba(255, 159, 64, 0.6)', 'rgba(255, 99, 132, 0.6)', 'rgba(54, 162, 235, 0.6)', 'rgba(255, 206, 86, 0.6)', 'rgba(75, 192, 192, 0.6)', 'rgba(153, 102, 255, 0.6)', 'rgba(255, 159, 64, 0.6)', 'rgba(255, 99, 132, 0.6)', 'rgba(54, 162, 235, 0.6)', 'rgba(255, 206, 86, 0.6)', 'rgba(75, 192, 192, 0.6)', 'rgba(153, 102, 255, 0.6)', 'rgba(255, 159, 64, 0.6)', 'rgba(255, 99, 132, 0.6)', 'rgba(54, 162, 235, 0.6)', 'rgba(255, 206, 86, 0.6)', 'rgba(75, 192, 192, 0.6)', 'rgba(153, 102, 255, 0.6)', 'rgba(255, 159, 64, 0.6)', 'rgba(255, 99, 132, 0.6)', 'rgba(54, 162, 235, 0.6)', 'rgba(255, 206, 86, 0.6)', 'rgba(75, 192, 192, 0.6)', 'rgba(153, 102, 255, 0.6)', 'rgba(255, 159, 64, 0.6)', 'rgba(255, 99, 132, 0.6)', 'rgba(54, 162, 235, 0.6)', 'rgba(255, 206, 86, 0.6)', 'rgba(75, 192, 192, 0.6)', 'rgba(153, 102, 255, 0.6)', 'rgba(255, 159, 64, 0.6)', 'rgba(255, 99, 132, 0.6)', 'rgba(54, 162, 235, 0.6)', 'rgba(255, 206, 86, 0.6)', 'rgba(75, 192, 192, 0.6)', 'rgba(153, 102, 255, 0.6)', 'rgba(255, 159, 64, 0.6)', 'rgba(255, 99, 132, 0.6)', 'rgba(54, 162, 235, 0.6)', 'rgba(255, 206, 86, 0.6)', 'rgba(75, 192, 192, 0.6)', 'rgba(153, 102, 255, 0.6)', 'rgba(255, 159, 64, 0.6)', 'rgba(255, 99, 132, 0.6)', 'rgba(54, 162, 235, 0.6)', 'rgba(255, 206, 86, 0.6)', 'rgba(75, 192, 192, 0.6)', 'rgba(153, 102, 255, 0.6)', 'rgba(255, 159, 64, 0.6)', 'rgba(255, 99, 132, 0.6)', 'rgba(54, 162, 235, 0.6)', 'rgba(255, 206, 86, 0.6)', 'rgba(75, 192, 192, 0.6)', 'rgba(153, 102, 255, 0.6)', 'rgba(255, 159, 64, 0.6)', 'rgba(255, 99, 132, 0.6)', 'rgba(54, 162, 235, 0.6)', 'rgba(255, 206, 86, 0.6)', 'rgba(75, 192, 192, 0.6)', 'rgba(153, 102, 255, 0.6)', 'rgba(255, 159, 64, 0.6)', 'rgba(255, 99, 132, 0.6)', 'rgba(54, 162, 235, 0.6)', 'rgba(255, 206, 86, 0.6)', 'rgba(75, 192, 192, 0.6)', 'rgba(153, 102, 255, 0.6)', 'rgba(255, 159, 64, 0.6)', 'rgba(255, 99, 132, 0.6)', 'rgba(54, 162, 235, 0.6)', 'rgba(255, 206, 86, 0.6)', 'rgba(75, 192, 192, 0.6)', 'rgba(153, 102, 255, 0.6)', 'rgba(255, 159, 64, 0.6)', 'rgba(255, 99, 132, 0.6)', 'rgba(54, 162, 235, 0.6)', 'rgba(255, 206, 86, 0.6)', 'rgba(75, 192, 192, 0.6)', 'rgba(153, 102, 255, 0.6)', 'rgba(255, 159, 64, 0.6)', 'rgba(255, 99, 132, 0.6)', 'rgba(54, 162, 235, 0.6)', 'rgba(255, 206, 86, 0.6)', 'rgba(75, 192, 192, 0.6)', 'rgba(153, 102, 255, 0.6)', 'rgba(255, 159, 64, 0.6)', 'rgba(255, 99, 132, 0.6)', 'rgba(54, 162, 235, 0.6)', 'rgba(255, 206, 86, 0.6)', 'rgba(75, 192, 192, 0.6)', 'rgba(153, 102, 255, 0.6)', 'rgba(255, 159, 64, 0.6)', 'rgba(255, 99, 132, 0.6)', 'rgba(54, 162, 235, 0.6)', 'rgba(255, 206, 86, 0.6)', 'rgba(75, 192, 192, 0.6)', 'rgba(153, 102, 255, 0.6)', 'rgba(255, 159, 64, 0.6)', 'rgba(255, 99, 132, 0.6)', 'rgba(54, 162, 235, 0.6)', 'rgba(255, 206, 86, 0.6)', 'rgba(75, 192, 192, 0.6)', 'rgba(153, 102, 255, 0.6)', 'rgba(255, 159, 64, 0.6)', 'rgba(255, 99, 132, 0.6)', 'rgba(54, 162, 235, 0.6)', 'rgba(255, 206, 86, 0.6)', 'rgba(75, 192, 192, 0.6)', 'rgba(153, 102, 255, 0.6)', 'rgba(255, 159, 64, 0.6)', 'rgba(255, 99, 132, 0.6)', 'rgba(54, 162, 235, 0.6)', 'rgba(255, 206, 86, 0.6)', 'rgba(75, 192, 192, 0.6)', 'rgba(153, 102, 255, 0.6)', 'rgba(255, 159, 64, 0.6)', 'rgba(255, 99, 132, 0.6)', 'rgba(54, 162, 235, 0.6)', 'rgba(255, 206, 86, 0.6)', 'rgba(75, 192, 192, 0.6)', 'rgba(153, 102, 255, 0.6)', 'rgba(255, 159, 64, 0.6)', 'rgba(255, 99, 132, 0.6)', 'rgba(54, 162, 235, 0.6)', 'rgba(255, 206, 86, 0.6)', 'rgba(75, 192, 192, 0.6)', 'rgba(153, 102, 255, 0.6)', 'rgba(255, 159, 64, 0.6)', 'rgba(255, 99, 132, 0.6)', 'rgba(54, 162, 235, 0.6)', 'rgba(255, 206, 86, 0.6)', 'rgba(75, 192, 192, 0.6)', 'rgba(153, 102, 255, 0.6)', 'rgba(255, 159, 64, 0.6)', 'rgba(255, 99, 132, 0.6)', 'rgba(54, 162, 235, 0.6)', 'rgba(255, 206, 86, 0.6)', 'rgba(75, 192, 192, 0.6)', 'rgba(153, 102, 255, 0.6)', 'rgba(255, 159, 64, 0.6)', 'rgba(255, 99, 132, 0.6)', 'rgba(54, 162, 235, 0.6)', 'rgba(255, 206, 86, 0.6)', 'rgba(75, 192, 192, 0.6)', 'rgba(153, 102, 255, 0.6)', 'rgba(255, 159, 64, 0.6)',  'rgba(255, 99, 132, 0.6)', 'rgba(54, 162, 235, 0.6)', 'rgba(255, 206, 86, 0.6)', 'rgba(75, 192, 192, 0.6)', 'rgba(153, 102, 255, 0.6)', 'rgba(255, 159, 64, 0.6)', 'rgba(255, 99, 132, 0.6)', 'rgba(54, 162, 235, 0.6)', 'rgba(255, 206, 86, 0.6)', 'rgba(75, 192, 192, 0.6)', 'rgba(153, 102, 255, 0.6)', 'rgba(255, 159, 64, 0.6)', 'rgba(255, 99, 132, 0.6)', 'rgba(54, 162, 235, 0.6)', 'rgba(255, 206, 86, 0.6)', 'rgba(75, 192, 192, 0.6)', 'rgba(153, 102, 255, 0.6)', 'rgba(255, 159, 64, 0.6)', 'rgba(255, 99, 132, 0.6)', 'rgba(54, 162, 235, 0.6)', 'rgba(255, 206, 86, 0.6)', 'rgba(75, 192, 192, 0.6)', 'rgba(153, 102, 255, 0.6)', 'rgba(255, 159, 64, 0.6)', 'rgba(255, 99, 132, 0.6)', 'rgba(54, 162, 235, 0.6)', 'rgba(255, 206, 86, 0.6)', 'rgba(75, 192, 192, 0.6)', 'rgba(153, 102, 255, 0.6)', 'rgba(255, 159, 64, 0.6)', 'rgba(255, 99, 132, 0.6)', 'rgba(54, 162, 235, 0.6)', 'rgba(255, 206, 86, 0.6)', 'rgba(75, 192, 192, 0.6)', 'rgba(153, 102, 255, 0.6)', 'rgba(255, 159, 64, 0.6)', 'rgba(255, 99, 132, 0.6)', 'rgba(54, 162, 235, 0.6)', 'rgba(255, 206, 86, 0.6)', 'rgba(75, 192, 192, 0.6)', 'rgba(255, 99, 132, 0.6)', 'rgba(54, 162, 235, 0.6)', 'rgba(255, 206, 86, 0.6)', 'rgba(75, 192, 192, 0.6)', 'rgba(255, 99, 132, 0.6)', 'rgba(54, 162, 235, 0.6)', 'rgba(255, 206, 86, 0.6)', 'rgba(75, 192, 192, 0.6)', 'rgba(255, 99, 132, 0.6)'],
+          borderWidth:0.01, 
+          borderColor:'#ffffff',
           hoverBorderWidth:3,
           hoverBorderColor:'#000'
         }]
@@ -534,7 +336,7 @@ L.circle([-19.015438,29.154857],{color:'red',fillColor:'#f03',fillOpacity:0.5,ra
       options:{
         title:{
           display:true,
-          text:'Largest Cities In Massachusetts',
+          text:'Coronavirus (COVID-19) Graph',
           fontSize:25
         },
         legend:{
@@ -561,17 +363,7 @@ L.circle([-19.015438,29.154857],{color:'red',fillColor:'#f03',fillOpacity:0.5,ra
 </body>
 </html>
 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
   
   
   
