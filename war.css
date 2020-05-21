@@ -76,3 +76,6 @@ canvas {
   height: 500;
   background-color: #ffffff;
 }
+.enter {
+  border-radius: 15px;
+}
