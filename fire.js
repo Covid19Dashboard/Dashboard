@@ -18,6 +18,31 @@ function openCity(evt, cityName) {
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " active";
 
+  // GEOJSON COLOR RAMP
+  function getColor(d) {
+    if (d > 9) {
+      return '#800026'; 
+    } else if (d == 5) {
+      return '#FC4E2A';
+    } else if (d > 0 && d < 5) {
+      return '#FED976';
+    } else {
+      return '#FFEDA0' 
+    }
+  }
+ 
+ // GEOJSON STYLE
+ function style(feature) {
+    return {
+      fillColor: getColor(feature.properties.deaths),
+      weight: 2,
+      opacity: 1,
+      color: 'white',
+      dashArray: '3',
+      fillOpacity: 0.7
+    };
+  }
+
   Mapping:if (cityName == "Map") {
     map = new L.Map('map');
     var cartocdn = 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png';
@@ -275,41 +300,29 @@ function openCity(evt, cityName) {
     .then(response => response.json())
     .then(data => console.log('do something with data. Eg: update the map', data))
     .catch(e => console.log(e))
-    cmap = new L.Map('cloro');
-    var clorocdn = 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png';
-    cloroAttrib = 'Carto geodatabase is good for this application';
-    cloro = new L.TileLayer(clorocdn);
-    cmap.setView([51.5, 0.12],2); // centered on London lat, long
-    cmap.addLayer(cloro);
+    
+    console.log("hi")
+    console.log("hi")
+    console.log("hi")
+    console.log("hi")
+    console.log("hi")
+    console.log("hi")
+    console.log("hi")
+    console.log("hi")
+    console.log("hi")
+    console.log("hi")
+    console.log(data)
 
-    function getColor(d) {
-      if (d > 9) {
-        return '#800026'; 
-      } else if (d == 5) {
-        return '#FC4E2A';
-      } else if (d > 0 && d < 5) {
-        return '#FED976';
-      } else {
-        return '#FFEDA0' 
-      }
-    }
-   
-   // GEOJSON STYLE
-   function style(feature) {
-      return {
-        fillColor: getColor(feature.properties.deaths),
-        weight: 2,
-        opacity: 1,
-        color: 'white',
-        dashArray: '3',
-        fillOpacity: 0.7
-      };
-    }
-
-    L.geoJson(data, {style: style, onEachFeature: function (feature, layer) {
+    map = new L.Map('map2');
+    var cartocdn = 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png';
+    cartoAttrib = 'Carto geodatabase is good for this application';
+    carto = new L.TileLayer(cartocdn);
+    map.setView([65,-100],3); // CENTERED ON CANADA
+    map.addLayer(carto);
+    L.geoJson(provs, {style: style, onEachFeature: function (feature, layer) {
       layer.bindPopup('<h3>Deaths</h3><h1>'+feature.properties.deaths+'</h1>');
-      }}).addTo(cmap);
-    }
+    }}).addTo(map);
+  }
   else {
     break Mapping;
   }
