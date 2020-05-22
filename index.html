@@ -7,7 +7,7 @@
         <title>Coronavirus</title>
         <link rel="icon" href="https://www.plant.ca/wp-content/uploads/2020/03/nCoV-CenterDiseaseControl23312.png" type="image/png" sizes="16x16">
         <link href ="war.css" rel ="stylesheet">
-        <link href ="bank.css" rel ="stylesheet">
+        <link rel="stylesheet" href="bank.css">
         <script src="fire.js"></script>
         <script src="04-29-2020.json"></script>
         <meta charset="UTF-8">
@@ -41,7 +41,7 @@
 
         <div id="Cloropleth" class="tabcontent">
             <h1>COVID-19 Recovered (April 29, 2020)</h1>
-            <div id='map' style='width:100%; height:500'></div>
+            <div id='cloro' style='width:100%; height:500'></div>
         </div>
 
         <div id="Graphs" class="tabcontent">
@@ -63,764 +63,424 @@
         
         <div id="Local Food Pantry" class="tabcontent">
             <head>
-<base href="https://secure3.convio.net/dbfb/site/SPageServer?pagename=%2FDonation_Forms%2Fdonation_splash_page" />
-<title>
-
-Daily Bread Food Bank
-</title>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<meta http-equiv="Content-Script-Type" content="text/javascript" />
-<meta name="Keywords" content=" " />
-<meta name="Description" content="" />
-<meta name="Robots" content="index, follow" />
-
-
-
-
-
-
-
-
-
-
-<script type="text/javascript" src="../yui3/yui/yui-min.js"></script><noscript>&nbsp;</noscript>
-<script type="text/javascript" src="../js/convio/modules.js?version=2.9"></script><noscript>&nbsp;</noscript>
-<script type="text/javascript">
-var Y = YUI({base: '../yui3/',
-insertBefore: 'yui_marker_loader_css', // insert all YUI module css before customstyle so it can be overridden
-debug: false, 
-modules: getModules('../', 'convio', true)});
-</script><noscript>&nbsp;</noscript>
-
-
-<script type="text/javascript" src="../js/utils.js"></script><noscript>&nbsp;</noscript>
-
-<script type="text/javascript" src="../js/obs_comp_rollup.js"></script><noscript>&nbsp;</noscript>
-
-
-<link href="../css/themes/default.css" rel="stylesheet" type="text/css" />
-<link href="../css/themes/alphacube.css" rel="stylesheet" type="text/css"/>
-
-
-<link href="../css/UserGlobalStyle.css" rel="stylesheet" type="text/css" />
-
-
-
-
-<link rel="stylesheet" type="text/css" id="yui_marker_loader_css" />
-<link href="../css/CustomStyle.css" rel="stylesheet" type="text/css" />
-<link href="../css/CustomWysiwygStyle.css" rel="stylesheet" type="text/css" />
-
-
-
-
-
-
-<meta name="CnvHeaderVersion" content="v5.0" />
-
-
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-<link type="text/css" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link type="text/css" rel="stylesheet" href="//secure3.convio.net/dbfb/custom/yeeboo/assets/font-awesome/css/font-awesome.min.css">
-
-
-<style type="text/css"><!--
-    @font-face {
-        font-family: 'Avenir';
-        src: url('../custom/yeeboo/assets/fonts/AvenirNext-Bold.woff') format('woff');
-        font-weight: Bold;
-    }
-
-    @font-face {
-        font-family: 'Avenir';
-        src: url('../custom/yeeboo/assets/fonts/AvenirNext-Regular.woff') format('woff');
-        font-weight: normal;
-    }
-
-    @font-face {
-        font-family: 'Avenir';
-        src: url('../custom/yeeboo/assets/fonts/AvenirNext-Medium.woff') format('woff');
-        font-weight: 500;
-    }
-
-    @font-face {
-        font-family: 'Knockout';
-        src: url('../custom/yeeboo/assets/fonts/Knockout.woff') format('woff');
-        font-weight: normal;
-    }
-
-    .wrapper {
-        background: #FFF url('../custom/yeeboo/assets/images/pic2.jpg') no-repeat center center;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        height: 100%;
-        width: 100%;
-    }
-
-    @media only screen and (min-width: 768px) {
-        .header .container .col-lg-12 {
-            padding-left: 100px;
-            padding-right: 60px;
-        }
-    }
-
-    .container {
-        /* padding-top: 50px;
-        padding-bottom: 50px; */
-    }
-
-    .header {
-        background-color: rgba(51,158,17, 0.99);
-        /* padding: 15px 0; */
-        padding: 31.5px 0;
-    }
-
-    .content {
-        background-color: rgba(255,255,255, 0.8);
-    }
-
-    div.row.header>div.col-lg-12 {
-        padding: 15px 50px;
-    }
-
-    h1 {
-        font-family: 'Avenir', sans-serif;
-        font-weight: 500;
-        font-size: 32px;
-        color: #339E07;
-        margin: 50px 0 0 0;
-    }
-
-    h2 {
-        font-family: 'Knockout', sans-serif;
-        font-size: 38px;
-        letter-spacing: 1px;
-        color: #000;
-        margin: 50px 0;
-    }
-
-    .q_disabled,
-    .b_disabled {
-        opacity: 0.2;
-    }
-
-    .question_two,
-    .question_three,
-    .continue-btn {
-        transition: opacity .25s ease-in-out;
-        -moz-transition: opacity .25s ease-in-out;
-        -webkit-transition: opacity .25s ease-in-out;
-    }
-
-    .submit {
-        font-family: 'Avenir', sans-serif;
-        text-transform: uppercase;
-        color: #000;
-        font-size: 14pt;
-        font-weight: 500;
-        background-image: none;
-        border: none;
-        padding: 25px 0px;
-        max-width: 300px;
-        min-width: 300px;
-        background-color: #fed766;
-        border-radius: 10px;
-        margin: 100px 0;
-    }
-
-    .b_disabled .submit:hover,
-    .b_disabled .submit:focus {
-        background-color: #fed766;
-    }
-
-    .submit:hover,
-    .submit:focus {
-        background-color: #f7cb4c;
-    }
-
-    label {
-        font-size: 22px;
-        color: #fff;
-        font-family: 'Avenir', sans-serif;
-        font-weight: 500;
-        background-color: #696c6d;
-        padding: 25px 0;
-        width: 300px;
-    }
-
-    .q_disabled label:hover,
-    .q_disabled label:focus {
-        background-color: #696c6d;
-    }
-
-    label:hover,
-    label:focus,
-    .selected {
-        background-color: #339E07;
-    }
-
-    p {
-        color: #000;
-    }
-
-    p,
-    span,
-    div {
-        font-family: 'Avenir', sans-serif;
-    }
-
-    #need-help {
-        float: right;
-        border: 1px solid #fff;
-        color: #fff;
-        /* border: 1px solid #339e11; */
-        /* color: #339e11; */
-        padding: 5px 7px;
-        vertical-align: middle;
-        margin-top: 7.5px;
-        cursor: pointer;
-    }
-
-    #need-help:hover,
-    #need-help:focus {
-        background-color: #FFF;
-        color: #339e11;
-    }
-
-    #db-logo {
-        width: 175px;
-        height: 47px;
-    }
-
-    input {
-        display: none;
-    }
-
-    /* need help modal */
-        .modal-bg {
-        position: fixed;
-        top: 0;
-        right: 0;
-        z-index: 10000;
-        background-color: rgba(0, 0, 0, 0.75);
-        height: 100%;
-        width: 100%;
-        display: none;
-    }
-
-    .modal-outer {
-        top: 10%;
-        left: 50%;
-        position: fixed;
-        width: 95%;
-        max-width: 630px;
-        z-index: 10001;
-    }
-
-    .modal-inner {
-        position: relative;
-        left: -50%;
-        min-height: 500px !important;
-        width: auto;
-        background-color: #fff;
-        border-radius: 6px;
-        padding: 15px;
-        border: 1px solid rgba(0,0,0,.2);
-        -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
-        box-shadow: 0 5px 15px rgba(0,0,0,.5);
-    }
-    .modal-inner-2 {
-        position: relative;
-        left: -50%;
-        min-height: auto !important;
-        width: auto;
-        background-color: #fff;
-        -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
-        box-shadow: 0 5px 15px rgba(0,0,0,.5);
-    }
-    .modal-close-2 {
-        position: absolute;
-        float: right;
-        top: -11px;
-        right: -8px;
-        cursor: pointer;
-        z-index: 1;
-    }
-    .modal-close {
-        position:relative;
-        float: right;
-        top: -35px;
-        right: -35px;
-        cursor: pointer;
-    }
-    .modal-header {
-        border-bottom: none;
-    }
-    .modal-img {
-        width: 100%;
-    }
-    .close-button {
-        color: #fed766;
-    }
-    .close-button:hover,
-    .close-button:focus {
-        color: #f7cb4c;
-    }
-    .fa-inverse {
-        color: #000 !important;
-    }
-    .modal-content-upper {
-        padding: 1px 20px 20px 20px;
-    }
-    .modal-content-upper a[href^="tel:"],
-    .modal-content-upper a[href^="tel:"]:hover,
-    .modal-content-upper a[href^="tel:"]:focus,
-    .modal-content-upper a[href^="tel:"]:active {
-        color: #000;
-    }
-    .modal-content-upper h3 {
-        letter-spacing: 1px;
-        font-family: 'Knockout', sans-serif;
-    }
-    /* need help modal */
-
-    .y-right {
-        text-align: right;
-    }
-
-    .y-left {
-        text-align: left;
-    }
-
-    @media only screen and (max-width: 991px) {
-        label {
-            width: 220px;
-            font-size: 18px;
-        }
-    }
-
-    @media only screen and (max-width: 767px) {
-        .y-right,
-        .y-left {
-            text-align: center;
-        }
-    }
-
-    @media only screen and (max-width: 424px) {
-        div.row.header>div.col-lg-12 {
-            padding: 15px;
-        }
-        #db-logo {
-            width: 125px;
-            height: auto;
-        }
-        #need-help {
-            margin-top: 0px;
-        }
-    }
-
-    @media only screen and (max-width: 374px) {
-        .submit {
-            max-width: 100%;
-            min-width: 100%;
-        }
-    }
---></style>
-
-
-<script src="../jquery/jquery-1.6.4.min.js"></script>
- 
-
-		
-</head>
-<body class="mobile" >	
-<script type="text/javascript">
-
-    function donationTracker() {
-        //fetches the donation gift amount
-        var giftAmount = "-$0.01";
-        //gets rid of dollar sign
-        giftAmount = giftAmount.replace("$", "");
-        //gets campaign name for reporting
-        var campaignId = "1921";
-        //gets campaign id and donation form name for reporting 
-        //gets rid of any apostrophe's
-        campaignId = campaignId.replace("'", "");
-        var donationFormName = "2020 Covid19-ver2";
-        donationFormName = donationFormName.replace("'", "");
-        //push data to the datalayer
-        var rev = "-$0.01";
-        var recu = "";
-        var mon = "Donation_OneTime";
-        if (recu == "Active") {
-            mon = "Donation_Recurring";
-        }
-        dataLayer.push({
-            'event': 'sendTransaction',
-            'ecommerce': {
-                'purchase': {
-                    'actionField': {
-                        'id': '0',
-                        'affiliation': '1921',
-                        'sustainerActive': mon,
-                        'revenue': giftAmount
-                    },
-                    'products': [{
-                        'id': '5694',
-                        'name': donationFormName,
-                        'price': giftAmount,
-                        'category': mon,
-                        'brand': 'DailyBread',
-                        'quantity': 1
-                    }]
-                }
-            }
-        });
-    }
-
-    function eCommerceTracker() {
-        //gets the store id
-        var storeId = "";
-        rowCount = document.querySelectorAll("[class^=ShoppingCartRow]").length;
-
-        eQuantity = [];
-        transTotal = [];
-        itemName = [];
-
-        document.querySelectorAll("[class^=ShoppingCartRow]").forEach(function(query) {
-          eQuantity.push(query.querySelectorAll(".quantity-column p")[0].innerHTML.trim());
-          itemName.push(query.querySelectorAll("span.CartItemName")[0].innerHTML.trim());
-          transTotal.push(query.querySelectorAll(".price-column p")[0].innerHTML.replace("$", "").trim());
-        });
-
-        trackingCode = document.querySelectorAll('span#tracking_code')[0].innerHTML;
-        eTotal = document.querySelectorAll('#total')[0].innerHTML.replace("$", "").trim();
-
-        var personalGift = document.querySelectorAll("#additional_donation")[0].innerHTML.replace("$", "").trim();
-
-        if (personalGift > 0) {
-            dataLayer.push({
-                'event': 'sendUpsell',
-                'ecommerce': {
-                    'purchase': {
-                        'actionField': {
-                            'id': trackingCode, //unique transaction ID
-                            'affiliation': storeId,
-                            'revenue': personalGift
-                        },
-                        'products': [{
-                            'id': trackingCode,
-                            'name': 'Personal Gift',
-                            'category': 'Upsell',
-                            'price': personalGift,
-                            'brand': 'DailyBread',
-                            'quantity': '1'
-                        }]
+                <base href="https://secure3.convio.net/dbfb/site/SPageServer?pagename=%2FDonation_Forms%2Fdonation_splash_page" />
+                <title>
+                    Daily Bread Food Bank
+                </title>
+                <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+                <meta http-equiv="Content-Script-Type" content="text/javascript" />
+                <meta name="Keywords" content=" " />
+                <meta name="Description" content="" />
+                <meta name="Robots" content="index, follow" />
+                <script type="text/javascript" src="../yui3/yui/yui-min.js"></script><noscript>&nbsp;</noscript>
+                <script type="text/javascript" src="../js/convio/modules.js?version=2.9"></script><noscript>&nbsp;</noscript>
+                <script type="text/javascript">
+                    var Y = YUI({base: '../yui3/',
+                        insertBefore: 'yui_marker_loader_css', // insert all YUI module css before customstyle so it can be overridden
+                        debug: false, 
+                        modules: getModules('../', 'convio', true)});
+                </script><noscript>&nbsp;</noscript>
+                <script type="text/javascript" src="../js/utils.js"></script><noscript>&nbsp;</noscript>
+                <script type="text/javascript" src="../js/obs_comp_rollup.js"></script><noscript>&nbsp;</noscript>
+                <link href="../css/themes/default.css" rel="stylesheet" type="text/css" />
+                <link href="../css/themes/alphacube.css" rel="stylesheet" type="text/css"/>
+                <link href="../css/UserGlobalStyle.css" rel="stylesheet" type="text/css" />
+                <link rel="stylesheet" type="text/css" id="yui_marker_loader_css" />
+                <link href="../css/CustomStyle.css" rel="stylesheet" type="text/css" />
+                <link href="../css/CustomWysiwygStyle.css" rel="stylesheet" type="text/css" />
+                <meta name="CnvHeaderVersion" content="v5.0" />
+                <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+                <link type="text/css" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                <link type="text/css" rel="stylesheet" href="//secure3.convio.net/dbfb/custom/yeeboo/assets/font-awesome/css/font-awesome.min.css">
+                <script src="../jquery/jquery-1.6.4.min.js"></script>
+            </head>
+
+            <body class="mobile" >	
+            <script type="text/javascript">
+
+                function donationTracker() {
+                    //fetches the donation gift amount
+                    var giftAmount = "-$0.01";
+                    //gets rid of dollar sign
+                    giftAmount = giftAmount.replace("$", "");
+                    //gets campaign name for reporting
+                    var campaignId = "1921";
+                    //gets campaign id and donation form name for reporting 
+                    //gets rid of any apostrophe's
+                    campaignId = campaignId.replace("'", "");
+                    var donationFormName = "2020 Covid19-ver2";
+                    donationFormName = donationFormName.replace("'", "");
+                    //push data to the datalayer
+                    var rev = "-$0.01";
+                    var recu = "";
+                    var mon = "Donation_OneTime";
+                    if (recu == "Active") {
+                        mon = "Donation_Recurring";
                     }
+                    dataLayer.push({
+                        'event': 'sendTransaction',
+                        'ecommerce': {
+                            'purchase': {
+                                'actionField': {
+                                    'id': '0',
+                                    'affiliation': '1921',
+                                    'sustainerActive': mon,
+                                    'revenue': giftAmount
+                                },
+                                'products': [{
+                                    'id': '5694',
+                                    'name': donationFormName,
+                                    'price': giftAmount,
+                                    'category': mon,
+                                    'brand': 'DailyBread',
+                                    'quantity': 1
+                                }]
+                            }
+                        }
+                    });
                 }
-            });
-        }
+
+                function eCommerceTracker() {
+                    //gets the store id
+                    var storeId = "";
+                    rowCount = document.querySelectorAll("[class^=ShoppingCartRow]").length;
+
+                    eQuantity = [];
+                    transTotal = [];
+                    itemName = [];
+
+                    document.querySelectorAll("[class^=ShoppingCartRow]").forEach(function(query) {
+                    eQuantity.push(query.querySelectorAll(".quantity-column p")[0].innerHTML.trim());
+                    itemName.push(query.querySelectorAll("span.CartItemName")[0].innerHTML.trim());
+                    transTotal.push(query.querySelectorAll(".price-column p")[0].innerHTML.replace("$", "").trim());
+                    });
+
+                    trackingCode = document.querySelectorAll('span#tracking_code')[0].innerHTML;
+                    eTotal = document.querySelectorAll('#total')[0].innerHTML.replace("$", "").trim();
+
+                    var personalGift = document.querySelectorAll("#additional_donation")[0].innerHTML.replace("$", "").trim();
+
+                    if (personalGift > 0) {
+                        dataLayer.push({
+                            'event': 'sendUpsell',
+                            'ecommerce': {
+                                'purchase': {
+                                    'actionField': {
+                                        'id': trackingCode, //unique transaction ID
+                                        'affiliation': storeId,
+                                        'revenue': personalGift
+                                    },
+                                    'products': [{
+                                        'id': trackingCode,
+                                        'name': 'Personal Gift',
+                                        'category': 'Upsell',
+                                        'price': personalGift,
+                                        'brand': 'DailyBread',
+                                        'quantity': '1'
+                                    }]
+                                }
+                            }
+                        });
+                    }
 
 
-        for (var i = 0; i < rowCount; i++) {
-            if (eQuantity[i] > 0) {
-                dataLayer.push({
-                    'event': 'sendTransaction',
-                    'ecommerce': {
-                        'purchase': {
-                            'actionField': {
-                                'id': trackingCode, //unique transaction ID
-                                'affiliation': storeId,
-                                'revenue': eTotal
-                            },
-                            'products': [{
-                                'id': trackingCode,
-                                'name': itemName[i],
-                                'category': 'eCommerce',
-                                'price': transTotal[i],
-                                'brand': 'DailyBread',
-                                'quantity': eQuantity[i]
-                            }]
+                    for (var i = 0; i < rowCount; i++) {
+                        if (eQuantity[i] > 0) {
+                            dataLayer.push({
+                                'event': 'sendTransaction',
+                                'ecommerce': {
+                                    'purchase': {
+                                        'actionField': {
+                                            'id': trackingCode, //unique transaction ID
+                                            'affiliation': storeId,
+                                            'revenue': eTotal
+                                        },
+                                        'products': [{
+                                            'id': trackingCode,
+                                            'name': itemName[i],
+                                            'category': 'eCommerce',
+                                            'price': transTotal[i],
+                                            'brand': 'DailyBread',
+                                            'quantity': eQuantity[i]
+                                        }]
+                                    }
+                                }
+                            });
                         }
                     }
+
+                }
+            </script>
+
+
+
+
+            <script>
+                dataLayer = [{ 'userid': 'visitor' }];
+            </script>
+            <script type="text/javascript">
+                document.addEventListener("DOMContentLoaded", function (event) {
+                    //checks for the donation form completion page
+                    if (window.location.href.indexOf("donation=completed") > -1) {
+                        //calling the donation tracker function.
+                        donationTracker();
+                    }
+                    //ecommerce completion page
+                    if (window.location.href.indexOf("CONFIRMATION=true") > -1) {
+                        console.log("eCommerce Completed, user not logged in");
+                        //calling the ecommerce tracker
+                        eCommerceTracker();
+                    }
                 });
-            }
-        }
 
-    }
-</script>
-
-
-
-
-<script>
-    dataLayer = [{ 'userid': 'visitor' }];
-</script>
-<script type="text/javascript">
-    document.addEventListener("DOMContentLoaded", function (event) {
-        //checks for the donation form completion page
-        if (window.location.href.indexOf("donation=completed") > -1) {
-            //calling the donation tracker function.
-            donationTracker();
-        }
-        //ecommerce completion page
-        if (window.location.href.indexOf("CONFIRMATION=true") > -1) {
-            console.log("eCommerce Completed, user not logged in");
-            //calling the ecommerce tracker
-            eCommerceTracker();
-        }
-    });
-
-</script>
-<!-- Google Tag Manager -->
-<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KL4D43Z" height="0" width="0"
-        style="display:none;visibility:hidden"></iframe></noscript>
-<script>(function (w, d, s, l, i) {
-        w[l] = w[l] || []; w[l].push({
-            'gtm.start':
-                new Date().getTime(), event: 'gtm.js'
-        }); var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-KL4D43Z');</script>
-<!-- End Google Tag Manager -->
+            </script>
+            <!-- Google Tag Manager -->
+            <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KL4D43Z" height="0" width="0"
+                    style="display:none;visibility:hidden"></iframe></noscript>
+            <script>(function (w, d, s, l, i) {
+                    w[l] = w[l] || []; w[l].push({
+                        'gtm.start':
+                            new Date().getTime(), event: 'gtm.js'
+                    }); var f = d.getElementsByTagName(s)[0],
+                        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                            '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+                })(window, document, 'script', 'dataLayer', 'GTM-KL4D43Z');</script>
+            <!-- End Google Tag Manager -->
 
 
 
-<div class="wrapper">
-    
+            <div class="wrapper">
+                
 
 
 
 
 
-<div class="header">
-    <div class="container">
-        <div class="col-lg-12">
-            <img src="//secure3.convio.net/dbfb/custom/yeeboo/assets/images/daily-bread-logo-white-3x.png" alt="" id="db-logo">
-            <div id="need-help">Need Help?</div>
-        </div>
-    </div>
-</div>
-<div class="content">
-    <div class="container">
-        <div class="col-lg-12">
-            <h1 class="text-center">With your help, we are fighting hunger together.</h1>
-        </div>
-    </div>
-</div>
-<div class="content">
-    <div class="container">
-        <div class="col-lg-12 question_one">
-            <h2 class="text-center">Would you like to make this a monthly gift?</h2>
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 y-right">
-                    <label for="monthly_yes" class="text-center">YES</label>
-                    <input type="radio" name="monthly" id="monthly_yes" value="yes">
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 y-left">
-                    <label for="monthly_no" class="text-center">NO</label>
-                    <input type="radio" name="monthly" id="monthly_no" value="no">
+            <div class="header">
+                <div class="container">
+                    <div class="col-lg-12">
+                        <img src="//secure3.convio.net/dbfb/custom/yeeboo/assets/images/daily-bread-logo-white-3x.png" alt="" id="db-logo">
+                        <div id="need-help">Need Help?</div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-lg-12 question_two q_disabled">
-            <h2 class="text-center disabled">Who is making this donation?</h2>
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 y-right">
-                    <label for="donation_i_am" class="text-center">I AM</label>
-                    <input type="radio" name="who_is_donating" id="donation_i_am" value="i am" disabled>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 y-left">
-                    <label for="donation_organization" class="text-center">AN ORGANIZATION</label>
-                    <input type="radio" name="who_is_donating" id="donation_organization" value="an organization" disabled>
+            <div class="content">
+                <div class="container">
+                    <div class="col-lg-12">
+                        <h1 class="text-center">With your help, we are fighting hunger together.</h1>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-lg-12 question_three q_disabled">
-            <h2 class="text-center disabled">Is this donation in memory or in honour of someone?</h2>
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 y-right">
-                    <label for="in_honour" class="text-center">YES, IN HONOUR</label>
-                    <input type="radio" name="honour_memory" id="in_honour" value="in honour" disabled>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center">
-                    <label for="in_memory">YES, IN MEMORY</label>
-                    <input type="radio" name="honour_memory" id="in_memory" value="in memory" disabled>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 y-left">
-                    <label for="honour_memory_no" class="text-center">NO</label>
-                    <input type="radio" name="honour_memory" id="honour_memory_no" value="no" disabled>
+            <div class="content">
+                <div class="container">
+                    <div class="col-lg-12 question_one">
+                        <h2 class="text-center">Would you like to make this a monthly gift?</h2>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 y-right">
+                                <label for="monthly_yes" class="text-center">YES</label>
+                                <input type="radio" name="monthly" id="monthly_yes" value="yes">
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 y-left">
+                                <label for="monthly_no" class="text-center">NO</label>
+                                <input type="radio" name="monthly" id="monthly_no" value="no">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 question_two q_disabled">
+                        <h2 class="text-center disabled">Who is making this donation?</h2>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 y-right">
+                                <label for="donation_i_am" class="text-center">I AM</label>
+                                <input type="radio" name="who_is_donating" id="donation_i_am" value="i am" disabled>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 y-left">
+                                <label for="donation_organization" class="text-center">AN ORGANIZATION</label>
+                                <input type="radio" name="who_is_donating" id="donation_organization" value="an organization" disabled>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 question_three q_disabled">
+                        <h2 class="text-center disabled">Is this donation in memory or in honour of someone?</h2>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 y-right">
+                                <label for="in_honour" class="text-center">YES, IN HONOUR</label>
+                                <input type="radio" name="honour_memory" id="in_honour" value="in honour" disabled>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center">
+                                <label for="in_memory">YES, IN MEMORY</label>
+                                <input type="radio" name="honour_memory" id="in_memory" value="in memory" disabled>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 y-left">
+                                <label for="honour_memory_no" class="text-center">NO</label>
+                                <input type="radio" name="honour_memory" id="honour_memory_no" value="no" disabled>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 text-center b_disabled continue-btn">
+                        <button type="button" class="submit" disabled>CONTINUE</button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-lg-12 text-center b_disabled continue-btn">
-            <button type="button" class="submit" disabled>CONTINUE</button>
-        </div>
-    </div>
-</div>
 
-</div>
-
-<div class="modal-bg">
-    <div class="modal-outer">
-        <div class="modal-inner-2">
-            <div class="modal-close-2">
-                <span class="fa-stack fa-lg close-button">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-times fa-stack-1x fa-inverse"></i>
-                </span>
             </div>
-            <div class="modal-content-upper">
-                <h3 class="text-center">Contact Us</h3>
-                <p class="text-center">Daily Bread Food Bank<br>
-                Hours of Operations:<br>
-                Monday to Friday: 8:30 a.m. to 4:30 p.m.</p>
-                <p class="text-center">Address:<br>
-                191 New toronto Street<br>
-                Toronto, ON M8V 2E7<br>
-                <a href="tel:14162030050">416-203-0050</a></p>
-                <p class="text-center">To find your local food bank, please call us at <a href="tel:14162030050">416-203-0050</a> during regular business hours. After hours, please call 211.</p>
+
+            <div class="modal-bg">
+                <div class="modal-outer">
+                    <div class="modal-inner-2">
+                        <div class="modal-close-2">
+                            <span class="fa-stack fa-lg close-button">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-times fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </div>
+                        <div class="modal-content-upper">
+                            <h3 class="text-center">Contact Us</h3>
+                            <p class="text-center">Daily Bread Food Bank<br>
+                            Hours of Operations:<br>
+                            Monday to Friday: 8:30 a.m. to 4:30 p.m.</p>
+                            <p class="text-center">Address:<br>
+                            191 New toronto Street<br>
+                            Toronto, ON M8V 2E7<br>
+                            <a href="tel:14162030050">416-203-0050</a></p>
+                            <p class="text-center">To find your local food bank, please call us at <a href="tel:14162030050">416-203-0050</a> during regular business hours. After hours, please call 211.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</div>
 
-<script type="text/javascript">
-    $(document).ready(function () {
+            <script type="text/javascript">
+                $(document).ready(function () {
 
-        // handle first question series highlighting and enable second series of questions
-        $('.question_one input').click(function() {
-            if ($(this).is(":checked")) {
+                    // handle first question series highlighting and enable second series of questions
+                    $('.question_one input').click(function() {
+                        if ($(this).is(":checked")) {
 
-                // if monthly gift, hide third set of questions
-                if ( $(this).attr('value') == 'yes' ) {
-                    $('.question_three').hide();
-                } else {
-                    $('.question_three').show();
-                }
+                            // if monthly gift, hide third set of questions
+                            if ( $(this).attr('value') == 'yes' ) {
+                                $('.question_three').hide();
+                            } else {
+                                $('.question_three').show();
+                            }
 
-                $('.question_one label').removeClass('selected');
-                $(this).prev().addClass('selected');
-                $('.question_two').removeClass('q_disabled');
-                $('.question_two input').removeAttr('disabled');
-                $('.question_two')[0].scrollIntoView({behavior: "smooth"});
-            }
-        });
+                            $('.question_one label').removeClass('selected');
+                            $(this).prev().addClass('selected');
+                            $('.question_two').removeClass('q_disabled');
+                            $('.question_two input').removeAttr('disabled');
+                            $('.question_two')[0].scrollIntoView({behavior: "smooth"});
+                        }
+                    });
 
-        // handle second question series highlighting and enable third series of questions
-        $('.question_two input').click(function() {
-            if ($(this).is(":checked")) {
-                $('.question_two label').removeClass('selected');
-                $(this).prev().addClass('selected');
-                $('.question_three').removeClass('q_disabled');
-                $('.question_three input').removeAttr('disabled');
+                    // handle second question series highlighting and enable third series of questions
+                    $('.question_two input').click(function() {
+                        if ($(this).is(":checked")) {
+                            $('.question_two label').removeClass('selected');
+                            $(this).prev().addClass('selected');
+                            $('.question_three').removeClass('q_disabled');
+                            $('.question_three input').removeAttr('disabled');
 
-                // if monthly gift, enable continue button
-                if ( $('input#monthly_yes').is(":checked") ) {
-                    $('.continue-btn').removeClass('b_disabled');
-                    $('.continue-btn button').removeAttr('disabled');
-                    $('.continue-btn')[0].scrollIntoView({behavior: "smooth"});
-                } else {
-                    $('.question_three')[0].scrollIntoView({behavior: "smooth"});
-                }
-            }
-        });
+                            // if monthly gift, enable continue button
+                            if ( $('input#monthly_yes').is(":checked") ) {
+                                $('.continue-btn').removeClass('b_disabled');
+                                $('.continue-btn button').removeAttr('disabled');
+                                $('.continue-btn')[0].scrollIntoView({behavior: "smooth"});
+                            } else {
+                                $('.question_three')[0].scrollIntoView({behavior: "smooth"});
+                            }
+                        }
+                    });
 
-        // handle third question series highlighting and enable continue button
-        $('.question_three input').click(function() {
-            if ($(this).is(":checked")) {
-                $('.question_three label').removeClass('selected');
-                $(this).prev().addClass('selected');
-                $('.continue-btn').removeClass('b_disabled');
-                $('.continue-btn button').removeAttr('disabled');
-                $('.continue-btn')[0].scrollIntoView({behavior: "smooth"});
-            }
-        });
+                    // handle third question series highlighting and enable continue button
+                    $('.question_three input').click(function() {
+                        if ($(this).is(":checked")) {
+                            $('.question_three label').removeClass('selected');
+                            $(this).prev().addClass('selected');
+                            $('.continue-btn').removeClass('b_disabled');
+                            $('.continue-btn button').removeAttr('disabled');
+                            $('.continue-btn')[0].scrollIntoView({behavior: "smooth"});
+                        }
+                    });
 
-        // handle continue button click
-        $('.submit').click(function() {
-            var answers = new Object();
+                    // handle continue button click
+                    $('.submit').click(function() {
+                        var answers = new Object();
 
-            $('input').each(function(){
-                if ($(this).is(":checked")) {
-                    answers[$(this).attr('name')] = $(this).attr('value');
-                }
-            });
-            
-            // handle redirection to donation form
-            if (answers.monthly == 'yes') {
-                if (answers.who_is_donating === 'i am' ) {
-                    // monthly individual donation
-                    window.location = "https://secure3.convio.net/dbfb/site/Donation2?df_id=4870&mfc_pref=T&4870.donation=form1";
-                } else {
-                    // monthly organization donation
-                    window.location = "https://secure3.convio.net/dbfb/site/Donation2?df_id=4871&mfc_pref=T&4871.donation=form1";
-                }
-            } else {
-                if (answers.who_is_donating === 'i am' ) {
-                    // one-time individual donation
-                    switch (answers.honour_memory) {
-                        case 'in honour':
-                            window.location = "https://secure3.convio.net/dbfb/site/Donation2?df_id=4865&mfc_pref=T&4865.donation=form1";
-                            break;
-                    
-                        case 'in memory':
-                            window.location = "https://secure3.convio.net/dbfb/site/Donation2?df_id=4866&mfc_pref=T&4866.donation=form1";
-                            break;
+                        $('input').each(function(){
+                            if ($(this).is(":checked")) {
+                                answers[$(this).attr('name')] = $(this).attr('value');
+                            }
+                        });
+                        
+                        // handle redirection to donation form
+                        if (answers.monthly == 'yes') {
+                            if (answers.who_is_donating === 'i am' ) {
+                                // monthly individual donation
+                                window.location = "https://secure3.convio.net/dbfb/site/Donation2?df_id=4870&mfc_pref=T&4870.donation=form1";
+                            } else {
+                                // monthly organization donation
+                                window.location = "https://secure3.convio.net/dbfb/site/Donation2?df_id=4871&mfc_pref=T&4871.donation=form1";
+                            }
+                        } else {
+                            if (answers.who_is_donating === 'i am' ) {
+                                // one-time individual donation
+                                switch (answers.honour_memory) {
+                                    case 'in honour':
+                                        window.location = "https://secure3.convio.net/dbfb/site/Donation2?df_id=4865&mfc_pref=T&4865.donation=form1";
+                                        break;
+                                
+                                    case 'in memory':
+                                        window.location = "https://secure3.convio.net/dbfb/site/Donation2?df_id=4866&mfc_pref=T&4866.donation=form1";
+                                        break;
 
-                        case 'no':
-                            window.location = "http://support.dailybread.ca/site/Donation2?df_id=5688&5688.donation=form1&mfc_pref=T";
-                            break;
-                    }
-                } else {
-                    switch (answers.honour_memory) {
-                        // one-time organization donation
-                        case 'in honour':
-                            window.location = "https://secure3.convio.net/dbfb/site/Donation2?df_id=4868&mfc_pref=T&4868.donation=form1";
-                            break;
-                    
-                        case 'in memory':
-                            window.location = "https://secure3.convio.net/dbfb/site/Donation2?df_id=4869&mfc_pref=T&4869.donation=form1";
-                            break;
+                                    case 'no':
+                                        window.location = "http://support.dailybread.ca/site/Donation2?df_id=5688&5688.donation=form1&mfc_pref=T";
+                                        break;
+                                }
+                            } else {
+                                switch (answers.honour_memory) {
+                                    // one-time organization donation
+                                    case 'in honour':
+                                        window.location = "https://secure3.convio.net/dbfb/site/Donation2?df_id=4868&mfc_pref=T&4868.donation=form1";
+                                        break;
+                                
+                                    case 'in memory':
+                                        window.location = "https://secure3.convio.net/dbfb/site/Donation2?df_id=4869&mfc_pref=T&4869.donation=form1";
+                                        break;
 
-                        case 'no':
-                            window.location = "http://support.dailybread.ca/site/Donation2?df_id=5689&mfc_pref=T&5689.donation=form1";
-                            break;
-                    }
-                }
-            }
-        });
+                                    case 'no':
+                                        window.location = "http://support.dailybread.ca/site/Donation2?df_id=5689&mfc_pref=T&5689.donation=form1";
+                                        break;
+                                }
+                            }
+                        }
+                    });
 
 
-    });
-</script>
+                });
+            </script>
 
-<script type="text/javascript">
-    $(document).ready(function () {
-        // move the modal towards the bottom of the DOM
-        $('body').after($('div.modal-bg'));
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    // move the modal towards the bottom of the DOM
+                    $('body').after($('div.modal-bg'));
 
-        // listen for click on video image
-        $('#need-help').click(function () {
-            $('.modal-bg').fadeIn('fast', function () {
+                    // listen for click on video image
+                    $('#need-help').click(function () {
+                        $('.modal-bg').fadeIn('fast', function () {
 
-            });
-        });
-        // listen for click on close button to close modal
-        $('.modal-close, .modal-close-2').click(function () {
-            $('.modal-bg').fadeOut('fast', function () {
+                        });
+                    });
+                    // listen for click on close button to close modal
+                    $('.modal-close, .modal-close-2').click(function () {
+                        $('.modal-bg').fadeOut('fast', function () {
 
-            });
-        });
-    });
-</script>
+                        });
+                    });
+                });
+            </script>
 
-</body>
-        </div>
+            </body>
+            </div>
 
         <div id="Forum" class="tabcontent">
             <iframe src="https://minnit.chat/CoronaVirusForum?embed&&nickname=" style="border:none;width:90%;height:700px;" allowTransparency="true"></iframe>
