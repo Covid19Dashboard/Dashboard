@@ -319,7 +319,7 @@ function openCity(evt, cityName) {
     carto = new L.TileLayer(cartocdn);
     map.setView([65,-100],3); // CENTERED ON CANADA
     map.addLayer(carto);
-    L.geoJson(provs, {style: style, onEachFeature: function (feature, layer) {
+    L.geoJson(data, {style: style, onEachFeature: function (feature, layer) {
       layer.bindPopup('<h3>Deaths</h3><h1>'+feature.properties.deaths+'</h1>');
     }}).addTo(map);
   }
