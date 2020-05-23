@@ -287,7 +287,6 @@ L.circle([36.204824,138.252924],{color:'red',fillColor:'#f03',fillOpacity:0.5,ra
 L.circle([31.24,36.51],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:23050}).addTo(map).bindPopup('Jordan : 461')
 L.circle([48.0196,66.9237],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:204800}).addTo(map).bindPopup('Kazakhstan : 4096')
 L.circle([-0.0236,37.9062],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:19000}).addTo(map).bindPopup('Kenya : 380')
-L.circle([2020-05-23 02:32:42,35.90775700000001],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:13300}).addTo(map).bindPopup('"Korea : 266')
 L.circle([42.602636,20.902977],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:38600}).addTo(map).bindPopup('Kosovo : 772')
 L.circle([29.31166,47.481766],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:275750}).addTo(map).bindPopup('Kuwait : 5515')
 L.circle([41.20438,74.766098],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:46950}).addTo(map).bindPopup('Kyrgyzstan : 939')
