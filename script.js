@@ -189,9 +189,9 @@ L.circle([19.3139,-98.2404],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius
 L.circle([43.76923077,11.25588885],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:362000}).addTo(map).bindPopup('Toscana,Italy : 7240')
 L.circle([21.69400000000001,-71.7979],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:500}).addTo(map).bindPopup('Turks and Caicos Islands,United Kingdom : 10')
 L.circle([43.10675841,12.38824698],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:64800}).addTo(map).bindPopup('Umbria,Italy : 1296')
-L.circle([,],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:67500}).addTo(map).bindPopup('Unknown,Brazil : 135430')
-L.circle([,],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:12100}).addTo(map).bindPopup('Unknown,Chile : 25342')
-L.circle([,],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:7500}).addTo(map).bindPopup('Unknown,Spain : 150376')
+L.circle([,],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:6771500}).addTo(map).bindPopup('Unknown,Brazil : 135430')
+L.circle([,],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:1267100}).addTo(map).bindPopup('Unknown,Chile : 25342')
+L.circle([,],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:7518800}).addTo(map).bindPopup('Unknown,Spain : 150376')
 L.circle([45.73750286,7.320149366],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:49550}).addTo(map).bindPopup('Valle dAosta,Italy : 991')
 L.circle([45.43490485,12.33845213],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:709100}).addTo(map).bindPopup('Veneto,Italy : 14182')
 L.circle([19.1738,-96.1342],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:81900}).addTo(map).bindPopup('Veracruz,Mexico : 1638')
@@ -364,7 +364,7 @@ L.circle([-8.874217,125.727539],{color:'red',fillColor:'#f03',fillOpacity:0.5,ra
 L.circle([8.6195,0.8248],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:6050}).addTo(map).bindPopup('Togo : 121')
 L.circle([10.6918,-61.2225],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:5400}).addTo(map).bindPopup('Trinidad and Tobago : 108')
 L.circle([33.886917,9.537499],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:45150}).addTo(map).bindPopup('Tunisia : 903')
-L.circle([38.9637,35.2433],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:5050}).addTo(map).bindPopup('Turkey : 116111')
+L.circle([38.9637,35.2433],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:5805550}).addTo(map).bindPopup('Turkey : 116111')
 L.circle([1.373333,32.290275],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:3400}).addTo(map).bindPopup('Uganda : 68')
 L.circle([48.3794,31.1656],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:329250}).addTo(map).bindPopup('Ukraine : 6585')
 L.circle([23.424076,53.847818],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:689900}).addTo(map).bindPopup('United Arab Emirates : 13798')
@@ -377,6 +377,7 @@ L.circle([24.2155,-12.8858],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius
 L.circle([15.552727,48.516388],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:550}).addTo(map).bindPopup('Yemen : 11')
 L.circle([-13.133897,27.849332],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:16800}).addTo(map).bindPopup('Zambia : 336')
 L.circle([-19.015438,29.154857],{color:'red',fillColor:'#f03',fillOpacity:0.5,radius:900}).addTo(map).bindPopup('Zimbabwe : 18')
+
 
   }
   else if (cityName == "Cloropleth") {
